@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+output/
+reports/
+test-results/
+playwright-report/
+.tester-agent/
+.env*
+*.tgz
+*.log
+*.tmp
+.DS_Store

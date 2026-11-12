@@ -1,0 +1,33 @@
+{
+  "name": "@tester-agent/mcp",
+  "version": "0.3.0",
+  "description": "Open-source MCP for visual browser QA, end-to-end checks and evidence reports",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datb2404981/tester-agent-mcp.git"
+  },
+  "type": "module",
+  "bin": {
+    "tester-agent": "./src/server.mjs"
+  },
+  "files": [
+    "src",
+    "skills",
+    "scripts",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "playwright": "1.65.0",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "install:agents": "node scripts/install.mjs"
+  }
+}
